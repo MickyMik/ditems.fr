@@ -27,7 +27,7 @@ body {
   border-radius: 1rem;
   filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
   max-height: 200px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--white);
 }
 
 .profile-img:hover {
@@ -47,16 +47,16 @@ body {
   content: "▹";
   position: absolute;
   left: 0;
-  color: var(--accent);
+  color: var(--white);
 }
 
 /* UTILITAIRES */
 .color-primary {
-  color: var(--accent);
+  color: var(--white);
 }
 
 .color-secondary {
-  color: var(--white);
+  color: var(--accent);
 }
 
 .bg-accent {
