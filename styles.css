@@ -1,68 +1,51 @@
-:root {
-  --bg-dark: #0E1137;
-  --accent: #1591D0;
-  --white: #ffffff;
+/* Typography and layout */
+.section {
+  padding: 6rem 1rem;
 }
 
-body {
-  background-color: var(--bg-dark);
-  color: var(--white);
-  font-family: "Lato", sans-serif;
+/* Buttons */
+.btn-outline {
+  border: 2px solid #64ffda;
+  color: #64ffda;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Titres avec ligne décorative */
-.heading::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: -12px;
-  width: 80%;
-  height: 2px;
-  margin-left: 300px;
-  background-color: var(--accent);
+.btn-outline:hover {
+  background-color: #64ffda;
+  color: #0f172a;
 }
 
-/* Image de profil stylisée et élégante */
-.profile-img {
-  border-radius: 1rem;
-  border: 2px solid var(--white);
-  max-height: 200px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-  filter: grayscale(30%) contrast(1.1);
+/* Navigation links */
+.nav-link {
+  color: #cbd5e1;
+  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-.profile-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 30px rgba(21, 145, 208, 0.4);
-  filter: none;
-  border-color: var(--accent);
+.nav-link:hover {
+  color: #64ffda;
 }
 
-/* Liste d'expérience stylisée */
-.experience-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1rem;
+  }
 
-.experience-list li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--white);
-}
+  .btn-outline {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 
-/* UTILITAIRES */
-.color-primary {
-  color: var(--white);
-}
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
 
-.color-secondary {
-  color: var(--accent);
-}
-
-.bg-accent {
-  background-color: var(--accent);
+  h2 {
+    font-size: 1.5rem;
+  }
 }
