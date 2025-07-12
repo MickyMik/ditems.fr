@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,36 +8,33 @@
 
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body class="bg-dark text-white font-sans">
+
   <!-- Navbar -->
   <nav class="bg-transparent py-4">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap">
       <div class="hidden sm:flex space-x-6">
         <a href="#about" class="nav-link"><span class="text-green-400">01.</span> About</a>
         <a href="#experience" class="nav-link"><span class="text-green-400">02.</span> Experience</a>
         <a href="#work" class="nav-link"><span class="text-green-400">03.</span> Work</a>
         <a href="#contact" class="nav-link"><span class="text-green-400">04.</span> Contact</a>
       </div>
-      <a target="_blank" href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf"
-         class="btn-outline">My Resume</a>
+      <a target="_blank" href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf" class="btn-outline mt-4 sm:mt-0">My Resume</a>
     </div>
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="section">
+  <section id="home" class="section text-center sm:text-left" data-aos="fade-up">
     <p class="text-green-400 mb-2">Hi, my name is</p>
-    <h1 class="text-4xl font-extrabold sm:text-5xl">
-      Michael METINHOUE
-    </h1>
-    <h2 class="mt-2 text-2xl text-gray-300">I help companies build data platforms.</h2>
-    <p class="mt-4 text-gray-400 max-w-xl">
-      I'm a Data Engineer based in Paris 🇫🇷. Passionate about building scalable data architecture to solve real-world problems.
-    </p>
+    <h1 class="text-3xl sm:text-5xl font-extrabold">Michael METINHOUE</h1>
+    <h2 class="mt-2 text-xl sm:text-2xl text-gray-300">I help companies build data platforms.</h2>
+    <p class="mt-4 text-gray-400 max-w-xl mx-auto sm:mx-0">I'm a Data Engineer based in Paris 🇫🇷. Passionate about building scalable data architecture to solve real-world problems.</p>
 
-    <div class="flex space-x-4 mt-6">
+    <div class="flex justify-center sm:justify-start space-x-4 mt-6">
       <a href="mailto:contact@ditems.fr" class="icon-link"><i class="fas fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/michael-m-87177793/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/MickyMik" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
@@ -47,9 +44,9 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section" data-aos="fade-up">
     <h2 class="heading"><span class="text-green-400">01.</span> About Me</h2>
-    <div class="grid md:grid-cols-3 gap-6 items-start mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start mt-8">
       <div class="md:col-span-2 space-y-4">
         <p>Hello 👋🏻 My name is Michael. I enjoy solving complex data challenges and enabling teams with reliable pipelines and platforms.</p>
         <p>I'm the founder of <a href="https://www.remotecrew.io/" class="text-green-400">Remote Crew</a>, helping developers land remote jobs.</p>
@@ -60,12 +57,12 @@
           <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
         </div>
       </div>
-      <img src="profile.png" alt="Michael METINHOUE" class="rounded-lg shadow-lg mx-auto max-w-sm" />
+      <img src="profile.png" alt="Michael METINHOUE" class="rounded-lg shadow-lg mx-auto w-40 md:w-full" />
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" class="section">
+  <section id="experience" class="section" data-aos="fade-up">
     <h2 class="heading"><span class="text-green-400">02.</span> Experience</h2>
     <div class="space-y-8 mt-6">
       <div>
@@ -76,14 +73,13 @@
           <li>Led product strategy, development, and deployment</li>
         </ul>
       </div>
-      <!-- Add other experiences similarly -->
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="work" class="section">
+  <section id="work" class="section" data-aos="fade-up">
     <h2 class="heading"><span class="text-green-400">03.</span> Some Noteworthy Projects</h2>
-    <div class="grid lg:grid-cols-3 gap-6 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
       <div class="project-card">
         <div class="flex justify-between">
           <i class="fas fa-folder text-green-400"></i>
@@ -92,14 +88,13 @@
         <h3 class="mt-4 text-lg font-semibold">Python-snovio Library</h3>
         <p class="mt-2 text-gray-400 text-sm">A wrapper to interact with the snov.io API easily from Python scripts.</p>
       </div>
-      <!-- Add more project cards -->
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section text-center">
+  <section id="contact" class="section text-center" data-aos="fade-up">
     <h2 class="heading"><span class="text-green-400">04.</span> Contact Me</h2>
-    <h3 class="text-3xl font-bold mt-4">Get in touch.</h3>
+    <h3 class="text-2xl sm:text-3xl font-bold mt-4">Get in touch.</h3>
     <p class="text-gray-400 mt-4 max-w-xl mx-auto">
       I’m always open to discussing new data projects, freelance gigs, or mentoring opportunities.
     </p>
@@ -108,7 +103,10 @@
 
   <!-- Footer -->
   <footer class="text-center text-xs text-gray-500 py-6">
-    Design inspired by <a href="https://chatgpt.com" target="_blank" class="text-green-400">chatgpt.com</a>
+    Design inspired by <a href="https://github.com/bchiang7/v4" target="_blank" class="text-green-400">brittanychiang.com</a>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
