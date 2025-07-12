@@ -2,7 +2,6 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michael METINHOUE - Data Engineer</title>
 
@@ -11,45 +10,51 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body class="bg-dark text-white font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-transparent py-4">
+  <nav class="py-4 bg-dark sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap">
-      <div class="hidden sm:flex space-x-6">
-        <a href="#about" class="nav-link"><span class="text-green-400">01.</span> About</a>
-        <a href="#experience" class="nav-link"><span class="text-green-400">02.</span> Experience</a>
-        <a href="#work" class="nav-link"><span class="text-green-400">03.</span> Work</a>
-        <a href="#contact" class="nav-link"><span class="text-green-400">04.</span> Contact</a>
+      <div class="text-xl font-bold text-accent">MM</div>
+
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="sm:hidden text-accent text-2xl focus:outline-none transition duration-300">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Menu -->
+      <div id="menu" class="hidden w-full sm:flex sm:items-center sm:w-auto space-y-4 sm:space-y-0 sm:space-x-6 mt-4 sm:mt-0">
+        <a href="#about" class="nav-link"><span class="text-accent">01.</span> About</a>
+        <a href="#experience" class="nav-link"><span class="text-accent">02.</span> Experience</a>
+        <a href="#work" class="nav-link"><span class="text-accent">03.</span> Work</a>
+        <a href="#contact" class="nav-link"><span class="text-accent">04.</span> Contact</a>
+        <a href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf" class="btn-outline block sm:inline-block">My Resume</a>
       </div>
-      <a target="_blank" href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf" class="btn-outline mt-4 sm:mt-0">My Resume</a>
     </div>
   </nav>
 
-  <!-- Home Section -->
+  <!-- Sections -->
   <section id="home" class="section text-center sm:text-left" data-aos="fade-up">
-    <p class="text-green-400 mb-2">Hi, my name is</p>
+    <p class="text-accent mb-2">Hi, my name is</p>
     <h1 class="text-3xl sm:text-5xl font-extrabold">Michael METINHOUE</h1>
     <h2 class="mt-2 text-xl sm:text-2xl text-gray-300">I help companies build data platforms.</h2>
     <p class="mt-4 text-gray-400 max-w-xl mx-auto sm:mx-0">I'm a Data Engineer based in Paris 🇫🇷. Passionate about building scalable data architecture to solve real-world problems.</p>
 
     <div class="flex justify-center sm:justify-start space-x-4 mt-6">
       <a href="mailto:contact@ditems.fr" class="icon-link"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/michael-m-87177793/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/MickyMik" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/michael-m-87177793/" class="icon-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/MickyMik" class="icon-link"><i class="fab fa-github"></i></a>
     </div>
 
     <a href="mailto:contact@ditems.fr" class="btn-outline mt-6 inline-block">Contact Me</a>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="section" data-aos="fade-up">
-    <h2 class="heading"><span class="text-green-400">01.</span> About Me</h2>
+    <h2 class="heading"><span class="text-accent">01.</span> About Me</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start mt-8">
       <div class="md:col-span-2 space-y-4">
         <p>Hello 👋🏻 My name is Michael. I enjoy solving complex data challenges and enabling teams with reliable pipelines and platforms.</p>
-        <p>I'm the founder of <a href="https://www.remotecrew.io/" class="text-green-400">Remote Crew</a>, helping developers land remote jobs.</p>
+        <p>I’m the founder of <a href="https://www.remotecrew.io/" class="text-accent">Remote Crew</a>, helping developers land remote jobs.</p>
         <p>My background includes Python, big data processing, and cloud-based data engineering.</p>
         <div class="flex gap-4 flex-wrap mt-4">
           <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
@@ -57,16 +62,15 @@
           <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
         </div>
       </div>
-      <img src="profile.png" alt="Michael METINHOUE" class="rounded-lg shadow-lg mx-auto w-40 md:w-full" />
+      <img src="profile.png" alt="Michael METINHOUE" class="profile-img mx-auto" />
     </div>
   </section>
 
-  <!-- Experience Section -->
   <section id="experience" class="section" data-aos="fade-up">
-    <h2 class="heading"><span class="text-green-400">02.</span> Experience</h2>
+    <h2 class="heading"><span class="text-accent">02.</span> Experience</h2>
     <div class="space-y-8 mt-6">
       <div>
-        <h3 class="text-lg font-bold">Founder @ <a href="https://www.remotecrew.io/" class="text-green-400">Remote Crew</a></h3>
+        <h3 class="text-lg font-bold">Founder @ <a href="https://www.remotecrew.io/" class="text-accent">Remote Crew</a></h3>
         <p class="text-sm text-gray-400">Nov 2018 - Present</p>
         <ul class="list-disc list-inside mt-2 text-gray-300">
           <li>Built talent platform connecting developers and startups</li>
@@ -76,14 +80,13 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="work" class="section" data-aos="fade-up">
-    <h2 class="heading"><span class="text-green-400">03.</span> Some Noteworthy Projects</h2>
+    <h2 class="heading"><span class="text-accent">03.</span> Projects</h2>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
       <div class="project-card">
         <div class="flex justify-between">
-          <i class="fas fa-folder text-green-400"></i>
-          <a href="https://pypi.org/project/python-snovio/" target="_blank"><i class="fas fa-link text-gray-400 hover:text-white"></i></a>
+          <i class="fas fa-folder text-accent"></i>
+          <a href="https://pypi.org/project/python-snovio/" class="text-gray-400 hover:text-white"><i class="fas fa-link"></i></a>
         </div>
         <h3 class="mt-4 text-lg font-semibold">Python-snovio Library</h3>
         <p class="mt-2 text-gray-400 text-sm">A wrapper to interact with the snov.io API easily from Python scripts.</p>
@@ -91,22 +94,27 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="section text-center" data-aos="fade-up">
-    <h2 class="heading"><span class="text-green-400">04.</span> Contact Me</h2>
+    <h2 class="heading"><span class="text-accent">04.</span> Contact Me</h2>
     <h3 class="text-2xl sm:text-3xl font-bold mt-4">Get in touch.</h3>
-    <p class="text-gray-400 mt-4 max-w-xl mx-auto">
-      I’m always open to discussing new data projects, freelance gigs, or mentoring opportunities.
-    </p>
+    <p class="text-gray-400 mt-4 max-w-xl mx-auto">I’m always open to discussing new data projects, freelance gigs, or mentoring opportunities.</p>
     <a href="mailto:contact@ditems.fr" class="btn-outline mt-6 inline-block">Say Hello</a>
   </section>
 
-  <!-- Footer -->
   <footer class="text-center text-xs text-gray-500 py-6">
-    Design inspired by <a href="https://github.com/bchiang7/v4" target="_blank" class="text-green-400">brittanychiang.com</a>
+    Design inspired by <a href="https://github.com/bchiang7/v4" target="_blank" class="text-accent">brittanychiang.com</a>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+
+    // Toggle mobile menu
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
