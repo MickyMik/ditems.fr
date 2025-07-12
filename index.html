@@ -1,98 +1,114 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <title>Michael METINHOUE - Data Engineer</title>
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-900 text-white">
 
+<body class="bg-dark text-white font-sans">
   <!-- Navbar -->
-  <header class="fixed w-full z-50 bg-gray-900 shadow-lg">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-green-400 font-bold text-xl">MonPortfolio</div>
-
-      <!-- Desktop Menu -->
-      <nav class="hidden md:flex space-x-6">
+  <nav class="bg-transparent py-4">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="hidden sm:flex space-x-6">
         <a href="#about" class="nav-link"><span class="text-green-400">01.</span> About</a>
         <a href="#experience" class="nav-link"><span class="text-green-400">02.</span> Experience</a>
         <a href="#work" class="nav-link"><span class="text-green-400">03.</span> Work</a>
         <a href="#contact" class="nav-link"><span class="text-green-400">04.</span> Contact</a>
-      </nav>
+      </div>
+      <a target="_blank" href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf"
+         class="btn-outline">My Resume</a>
+    </div>
+  </nav>
 
-      <!-- Mobile Menu Button -->
-      <button id="menu-toggle" class="md:hidden text-green-400 text-2xl focus:outline-none">
-        ☰
-      </button>
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <p class="text-green-400 mb-2">Hi, my name is</p>
+    <h1 class="text-4xl font-extrabold sm:text-5xl">
+      Michael METINHOUE
+    </h1>
+    <h2 class="mt-2 text-2xl text-gray-300">I help companies build data platforms.</h2>
+    <p class="mt-4 text-gray-400 max-w-xl">
+      I'm a Data Engineer based in Paris 🇫🇷. Passionate about building scalable data architecture to solve real-world problems.
+    </p>
+
+    <div class="flex space-x-4 mt-6">
+      <a href="mailto:contact@ditems.fr" class="icon-link"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/michael-m-87177793/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/MickyMik" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
     </div>
 
-    <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-      <a href="#about" class="block nav-link py-2"><span class="text-green-400">01.</span> About</a>
-      <a href="#experience" class="block nav-link py-2"><span class="text-green-400">02.</span> Experience</a>
-      <a href="#work" class="block nav-link py-2"><span class="text-green-400">03.</span> Work</a>
-      <a href="#contact" class="block nav-link py-2"><span class="text-green-400">04.</span> Contact</a>
+    <a href="mailto:contact@ditems.fr" class="btn-outline mt-6 inline-block">Contact Me</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="heading"><span class="text-green-400">01.</span> About Me</h2>
+    <div class="grid md:grid-cols-3 gap-6 items-start mt-8">
+      <div class="md:col-span-2 space-y-4">
+        <p>Hello 👋🏻 My name is Michael. I enjoy solving complex data challenges and enabling teams with reliable pipelines and platforms.</p>
+        <p>I'm the founder of <a href="https://www.remotecrew.io/" class="text-green-400">Remote Crew</a>, helping developers land remote jobs.</p>
+        <p>My background includes Python, big data processing, and cloud-based data engineering.</p>
+        <div class="flex gap-4 flex-wrap mt-4">
+          <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+          <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+          <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
+        </div>
+      </div>
+      <img src="profile.png" alt="Michael METINHOUE" class="rounded-lg shadow-lg mx-auto max-w-sm" />
     </div>
-  </header>
+  </section>
 
-  <main class="pt-24 space-y-24">
-
-    <!-- About Section -->
-    <section id="about" class="section" data-aos="fade-up">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl text-green-400 font-semibold mb-4">About Me</h2>
-        <p>Je suis un développeur passionné par les interfaces élégantes et le code propre.</p>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2 class="heading"><span class="text-green-400">02.</span> Experience</h2>
+    <div class="space-y-8 mt-6">
+      <div>
+        <h3 class="text-lg font-bold">Founder @ <a href="https://www.remotecrew.io/" class="text-green-400">Remote Crew</a></h3>
+        <p class="text-sm text-gray-400">Nov 2018 - Present</p>
+        <ul class="list-disc list-inside mt-2 text-gray-300">
+          <li>Built talent platform connecting developers and startups</li>
+          <li>Led product strategy, development, and deployment</li>
+        </ul>
       </div>
-    </section>
+      <!-- Add other experiences similarly -->
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section bg-gray-800" data-aos="fade-up">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl text-green-400 font-semibold mb-4">Experience</h2>
-        <p>Plusieurs années d'expérience en développement web full-stack.</p>
+  <!-- Projects Section -->
+  <section id="work" class="section">
+    <h2 class="heading"><span class="text-green-400">03.</span> Some Noteworthy Projects</h2>
+    <div class="grid lg:grid-cols-3 gap-6 mt-8">
+      <div class="project-card">
+        <div class="flex justify-between">
+          <i class="fas fa-folder text-green-400"></i>
+          <a href="https://pypi.org/project/python-snovio/" target="_blank"><i class="fas fa-link text-gray-400 hover:text-white"></i></a>
+        </div>
+        <h3 class="mt-4 text-lg font-semibold">Python-snovio Library</h3>
+        <p class="mt-2 text-gray-400 text-sm">A wrapper to interact with the snov.io API easily from Python scripts.</p>
       </div>
-    </section>
+      <!-- Add more project cards -->
+    </div>
+  </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section" data-aos="fade-up">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl text-green-400 font-semibold mb-4">Projects</h2>
-        <p>Voici quelques projets que j’ai réalisés récemment.</p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-gray-800" data-aos="fade-up">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-3xl text-green-400 font-semibold mb-4">Contact</h2>
-        <p>Envie de collaborer ? Envoyez-moi un message.</p>
-        <a href="mailto:example@email.com" class="mt-4 inline-block btn-outline">Me Contacter</a>
-      </div>
-    </section>
-
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="section text-center">
+    <h2 class="heading"><span class="text-green-400">04.</span> Contact Me</h2>
+    <h3 class="text-3xl font-bold mt-4">Get in touch.</h3>
+    <p class="text-gray-400 mt-4 max-w-xl mx-auto">
+      I’m always open to discussing new data projects, freelance gigs, or mentoring opportunities.
+    </p>
+    <a href="mailto:contact@ditems.fr" class="btn-outline mt-6 inline-block">Say Hello</a>
+  </section>
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-400 py-6">
-    © 2025 MonPortfolio. Tous droits réservés.
+  <footer class="text-center text-xs text-gray-500 py-6">
+    Design inspired by <a href="https://github.com/bchiang7/v4" target="_blank" class="text-green-400">brittanychiang.com</a>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
-
-    const toggleBtn = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    toggleBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 </body>
 </html>
