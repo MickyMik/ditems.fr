@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head class="site-header">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michael METINHOUE - Data Engineer</title>
+  <title>Michael METINHHOUE - Data Engineer</title>
+  <link rel="icon" href="Asset 2@4x.png" type="image/png" alt="DITEMS">
 
   <!-- Tailwind CSS -->
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
@@ -23,16 +24,19 @@
   <!-- Navbar -->
   <nav>
     <div class="navbar-container">
-      <div class="nav-title">DITEMS</div>
+      <a href="#home" class="flex items-center space-x-3 group"></a>
+        <img src="Asset 2@4x.png" alt="DITEMS" class="logo h-12 w-12 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ml-2" />
+        <span class="nav-title text-2xl font-bold text-accent tracking-wide transition-colors duration-300 group-hover:text-white">DITEMS</span>
+      </a>
 
-      <div class="hidden sm:flex space-x-6">
+      <div class="hidden sm:flex space-x-6 ml-auto">
         <a href="#about" class="nav-link">About</a>
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#work" class="nav-link">Work</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
 
-      <a href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf" target="_blank" class="btn-outline hidden sm:inline-block">My Resume</a>
+      <a href="https://github.com/MickyMik/ditems.fr/blob/main/CV_METINHOUE_FR.pdf" target="_blank" class="btn-outline hidden sm:inline-block ml-10">My Resume</a>
 
       <!-- Mobile toggle -->
       <button id="menu-btn" class="sm:hidden focus:outline-none">
